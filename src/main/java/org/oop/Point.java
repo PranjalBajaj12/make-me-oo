@@ -1,17 +1,17 @@
 package org.oop;
 
 public class Point {
-    private final double x;
-    private final double y;
+    private final double xCoordinate;
+    private final double yCoordinate;
 
-    public Point(double x, double y) {
-        this.x = x;
-        this.y = y;
+    public Point(double xCoordinate, double yCoordinate) {
+        this.xCoordinate = xCoordinate;
+        this.yCoordinate = yCoordinate;
     }
 
     public double calculateDistance(Point endPoint) {
-        double xCoordinateDistance = getCoordinateDistance(x, endPoint.x);
-        double yCoordinateDistance = getCoordinateDistance(y, endPoint.y);
+        double xCoordinateDistance = getCoordinateDistance(xCoordinate, endPoint.xCoordinate);
+        double yCoordinateDistance = getCoordinateDistance(yCoordinate, endPoint.yCoordinate);
         return Math.sqrt(Math.pow(xCoordinateDistance, 2) + Math.pow(yCoordinateDistance, 2));
     }
 
@@ -20,8 +20,8 @@ public class Point {
     }
 
     public double getDirectionAngle(Point endPoint) {
-        double xCoordinateDistance = getCoordinateDistance(x, endPoint.x);
-        double yCoordinateDistance = getCoordinateDistance(y, endPoint.y);
+        double xCoordinateDistance = getCoordinateDistance(xCoordinate, endPoint.xCoordinate);
+        double yCoordinateDistance = getCoordinateDistance(yCoordinate, endPoint.yCoordinate);
         return Math.atan2(yCoordinateDistance, xCoordinateDistance);
     }
 }

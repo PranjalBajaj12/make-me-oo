@@ -26,3 +26,14 @@ He thought it'll be a good idea to convert this to Object Oriented Programming. 
 However, his trainer told him that what he did is not Object Oriented programming and asked Shivam to try again. 
 - Try to articulate problems with Shivam's OOP solution. (Write it somewhere and share it with your trainer)
 - Fork the project and fix the design related problem with Shivam's OOP solution. Share that with your trainer too.
+
+**Problems Articulated in Shivam OOP solution:**
+
+- Point.java file:
+1. In Point class setter function is not required because they are used for class fields          whose value change with time.
+2. The class fields that is xCoordinate and yCoordinate must be declared as final.
+3. The object creation for a class Point must only be using the constructor as it include information that do not change after object creation.
+3. Getter method is not required for the solution.
+
+- DistanceAndDirectionCalculator.java file:
+1. As this class does not have its own class fields and ,methods implemented also uses Point class objects as its parameter So we can encapsulate the functionality to find distance and direction between two points in Point class only. It enables to implement encapsulation OOP concept properly.
